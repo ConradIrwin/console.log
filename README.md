@@ -1,19 +1,5 @@
 The `console.log` gem allows you to log to the Javascript console from ruby/rails apps.
 
-## Installation
-
-1. Add `gem "console.log"` to your Gemfile.
-
-    ```ruby
-    gem "console.log" # makes console.log available in ruby
-    ```
-
-2. Bundle install
-
-    ```shell
-    bundle install
-    ```
-
 ## Usage
 
 1. Call `console.log` in rails.
@@ -31,6 +17,21 @@ The `console.log` gem allows you to log to the Javascript console from ruby/rail
     ![Screen shot](http://i.imgur.com/QJjjmjf.png)
 
 3. (optional) Scream with delight!
+
+## Installation
+
+1. Add `gem "console.log"` to your Gemfile.
+
+    ```ruby
+    gem "console.log" # makes console.log available in ruby
+    ```
+
+2. Bundle install
+
+    ```shell
+    bundle install
+    ```
+## Reference
 
 ### `console.log`
 
