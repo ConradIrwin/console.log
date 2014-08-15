@@ -25,17 +25,17 @@ I wrote it to solve 2 problems:
 
 1. Call `console.log` in rails.
 
-```ruby
-def load_user
-  user = User.where(email: 'foo@bar.com')
-  console.log "User: ", user
-  user
-end
-```
+    ```ruby
+    def load_user
+      user = User.where(email: 'foo@bar.com')
+      console.log "User: ", user
+      user
+    end
+    ```
 
 2. Open your browser's developer console.
 
-![Screen shot](http://i.imgur.com/QJjjmjf.png)
+    ![Screen shot](http://i.imgur.com/QJjjmjf.png)
 
 3. (optional) Scream with delight!
 
