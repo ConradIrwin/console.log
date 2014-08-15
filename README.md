@@ -1,37 +1,43 @@
 The `console.log` gem allows you to use `console.log` in your Ruby on Rails apps.
 
 I wrote it to solve 2 problems:
-1. It's hard to use rails logs for debugging because their either noisy, or completely hidden. Using
-   `console.log` lets you easily see only log messages in this request.
+
+1. It's hard to use rails logs for debugging because they're noisy, or (if you use something like pow)
+   completely hidden. Using `console.log` lets you easily see only log messages in this request.
 1. When working on the js for [Bugsnag](https://bugsnag.com/) I kept accidentally typing `console.log`
    into Rails. Now that works!
 
 ## Installation
 
 1. Add `gem "console.log"` to your Gemfile.
+
     ```ruby
     gem "console.log" # makes console.log available in ruby
     ```
+
 2. Bundle install
+
     ```shell
     bundle install
     ```
 
 ## Usage
 
-In rails you can now use console.log for debugging. This means you don't need
-to have the rails logs open (which is hard with servers like Pow), because log
-messages will go to your browser console.
+1. Call `console.log` in rails.
 
 ```ruby
 def load_user
   user = User.where(email: 'foo@bar.com')
-  console.log user
+  console.log "User: ", user
   user
 end
 ```
 
+2. Open your browser's developer console.
+
 ![Screen shot](http://i.imgur.com/QJjjmjf.png)
+
+3. (optional) Scream with delight!
 
 ### `console.log`
 
