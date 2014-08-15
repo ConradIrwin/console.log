@@ -31,6 +31,7 @@ The `console.log` gem allows you to log to the Javascript console from ruby/rail
     ```shell
     bundle install
     ```
+
 ## Reference
 
 ### `console.log`
