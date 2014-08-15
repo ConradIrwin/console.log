@@ -1,11 +1,4 @@
-The `console.log` gem allows you to use `console.log` in your Ruby on Rails apps.
-
-I wrote it to solve 2 problems:
-
-1. It's hard to use rails logs for debugging because they're noisy, or (if you use something like pow)
-   completely hidden. Using `console.log` lets you easily see only log messages in this request.
-1. When working on the js for [Bugsnag](https://bugsnag.com/) I kept accidentally typing `console.log`
-   into Rails. Now that works!
+The `console.log` gem allows you to log to the Javascript console from ruby/rails apps.
 
 ## Installation
 
@@ -52,6 +45,15 @@ If you want a little yellow triangle beside your message, call `console.warn` in
 ### `console.error`
 
 If you want your text to be bright red, call `console.error` instead of `console.log`.
+
+## Why??
+
+I wrote it to solve 2 problems:
+
+1. It's hard to use rails logs for debugging because they're noisy, or (if you use something like pow)
+   completely hidden. Using `console.log` lets you easily see only log messages in this request.
+1. When working on the js for [Bugsnag](https://bugsnag.com/) I kept accidentally typing `console.log`
+   into Rails. Now that works!
 
 ## License
 
